@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    padding: 20px;
+    overflow-x: hidden;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 10px rgba(255,127,80,0.4);
+}
+
+/* =========== TEMPLATE CARDS =========== */
+.templates {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.template-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeCard 0.8s ease backwards;
+}
+
+@keyframes fadeCard {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.template-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.template-text {
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* =========== BUTTON STYLE =========== */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #ff5722;
+    box-shadow: 0 0 12px rgba(255, 87, 34, 0.6);
+}
+
+/* Klik ripple effect */
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== POPUP AESTHETIC ===== */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-box {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: popupIn 0.3s ease;
+}
+
+@keyframes popupIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.popup-buttons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.popup-btn {
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-ok {
+    background: #ff7f50;
+    color: white;
+}
+
+.popup-cancel {
+    background: #ddd;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Mobile < 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .template-card {
+        padding: 12px;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+/* Tablet 480px – 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+    .templates {
+        gap: 15px;
+    }
+}
+
+/* Desktop > 768px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+    .templates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
