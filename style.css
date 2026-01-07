@@ -1,9 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background: #fafafa;
+    background-image: url("bg/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
     overflow-x: hidden;
     animation: fadeIn 0.8s ease;
+    color: white;
+    opacity: 70% black;
 }
 
 @keyframes fadeIn {
@@ -45,8 +50,9 @@ input:focus {
 }
 
 .template-card {
-    background: white;
+    backdrop-filter: blur(5px);
     padding: 15px;
+    border: 2px solid black;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -64,7 +70,7 @@ input:focus {
 }
 
 .template-text {
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
     line-height: 1.4;
 }
@@ -116,12 +122,13 @@ button:active {
 .popup-box {
     background: #fff;
     padding: 20px;
-    width: 90%;
+    width: 60%;
     max-width: 350px;
     border-radius: 16px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     text-align: center;
     animation: popupIn 0.3s ease;
+    color: black;
 }
 
 @keyframes popupIn {
@@ -164,12 +171,16 @@ button:active {
     .container {
         padding: 10px;
     }
+
+
     .template-card {
         padding: 12px;
     }
     button {
         width: 100%;
     }
+
+    
 }
 
 /* Tablet 480px – 768px */
