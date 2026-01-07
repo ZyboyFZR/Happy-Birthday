@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url("bg/background.png");
+    width: 100%;
+    height: max-content;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,13 +52,13 @@ input:focus {
 
 .template-card {
     background-color: white;
+    color: black;
     padding: 15px;
     border: 2px solid black;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeCard 0.8s ease backwards;
-    color: black;
 }
 
 @keyframes fadeCard {
