@@ -43,6 +43,16 @@
             <button onclick="pilihTemplate(2)">Pilih Pesan</button>
         </div>
 
+        <div class="template-card">
+            <p class="template-text">
+                Selamat ulang tahun! 🎉🎂 
+                Semoga hari ini dan tahun baru ini membawa kebahagian, kesuksesan, dan cinta yang melimpah untuk kamu. ❤️ 
+                Semoga impianmu menjadi kenyataan dan kamu terus tumbuh menjadi versi terbaik dari dirimu. 
+                Sekali lagi, Selamat Ulang Tahun! 🎉🎉🎉
+            </p>
+            <button onclick="pilihTemplate(3)">Pilih Pesan</button>
+        </div>
+
     </div>
 
     <button id="kirimBtn" class="hidden" onclick="kirimWA()">Kirim ke WhatsApp</button>
