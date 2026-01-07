@@ -9,12 +9,12 @@ Nikmati harimu, kamu layak bahagia ❤️`,
 
     `Bertambah usia berarti bertambah juga doa terbaik untukmu 🙏✨
 Semoga tahun ini membawa banyak kejutan indah.
-Selamat ulang tahun! 🎂`
+Selamat ulang tahun! 🎂`,
 
     `Selamat ulang tahun! 🎉🎂 
 Semoga hari ini dan tahun baru ini membawa kebahagian, kesuksesan, dan cinta yang melimpah untuk kamu. ❤️ 
 Semoga impianmu menjadi kenyataan dan kamu terus tumbuh menjadi versi terbaik dari dirimu. 
-Sekali lagi, Selamat Ulang Tahun! 🎉🎉🎉`
+Sekali lagi, Selamat Ulang Tahun! 🎉🎉🎉`,
 ];
 
 let selectedMessage = "";
