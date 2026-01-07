@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<h1 class="footer">&copy;2026 Boyzz</h1>
+<h1 class="footer">&copy;2026 Boyzz Birthday</h1>
 
 <script src="script.js"></script>
 </body>
