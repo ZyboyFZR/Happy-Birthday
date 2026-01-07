@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
     animation: fadeIn 0.8s ease;
     color: white;
-    opacity: 70% black;
 }
 
 @keyframes fadeIn {
