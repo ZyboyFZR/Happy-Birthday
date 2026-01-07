@@ -9,7 +9,7 @@
 <body>
 
 <div class="container">
-    <h2>🎉 Pilih Template Ucapan 🎉</h2>
+    <h2> Pilih Template Ucapan </h2>
 
     <label>Nama Pengirim:</label>
     <input type="text" id="namaPengirim" placeholder="Masukkan nama kamu...">
@@ -65,6 +65,8 @@
         <div class="popup-buttons" id="popupButtons"></div>
     </div>
 </div>
+
+<h1 class="footer">&copy;2026 Boyzz</h1>
 
 <script src="script.js"></script>
 </body>
